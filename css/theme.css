@@ -8,6 +8,7 @@ html {
 
 body {
   background: #fff;
+  color: #333;
   font-family: "PT Sans", sans-serif; }
 
 ul li {
@@ -105,21 +106,31 @@ a {
         color: #9e9e9e; }
 
 /* CSS For Home Slider Section */
-.home-slider #main-slider .owl-nav .owl-prev, .home-slider #main-slider .owl-nav .owl-next {
-  position: absolute;
-  top: 43%;
-  left: 80px;
-  width: 55px;
-  height: 55px;
-  background: transparent;
-  border: 1px solid #fff;
-  border-radius: 50%;
-  color: #fff;
-  font-size: 35px;
-  line-height: 41px; }
-.home-slider #main-slider .owl-nav .owl-next {
-  left: unset;
-  right: 85px; }
+.home-slider #main-slider {
+  position: relative;
+  background: #f6f7fb; }
+  .home-slider #main-slider .owl-dots .owl-dot {
+    width: 35px;
+    height: 35px;
+    display: block;
+    border-radius: 100%;
+    background: #f2f2f2;
+    float: left;
+    margin-right: 10px;
+    position: relative; }
+    .home-slider #main-slider .owl-dots .owl-dot .active {
+      background: transparent;
+      border: 1px solid #f88fb5; }
+      .home-slider #main-slider .owl-dots .owl-dot .active span {
+        width: 20px;
+        height: 20px;
+        display: block;
+        left: 7px;
+        top: 7px;
+        position: absolute;
+        margin: auto;
+        background-color: #f88fb5 !important;
+        border-radius: 100%; }
 
 /* CSS For Blog Post Section */
 .blog-wrapper {

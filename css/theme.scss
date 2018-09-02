@@ -118,8 +118,9 @@ html {overflow-x: hidden;}
 
 body {
 	background: #fff;
-    font-family:$theme-font;
-  	// overflow-x: hidden;
+  color: #333;
+  font-family:$theme-font;
+	// overflow-x: hidden;
 }
 
 ul li {list-style: none;}
@@ -233,28 +234,38 @@ a{
 
 .home-slider{
 	#main-slider{
-		
-		.owl-nav{
-			.owl-prev{
-				position: absolute;
-			    top: 43%;
-			    left: 80px;
-			    width: 55px;
-			    height: 55px;
-			    background: transparent;
-			    border: 1px solid $wcolor;
-			    border-radius: 50%;
-			    color: $wcolor;
-			    font-size: 35px;
-			    line-height: 41px;
-			}
+    position: relative;
+		background:#f6f7fb;
 
-			.owl-next{
-				@extend .owl-prev;
-				left: unset;
-    			right: 85px;
-			}
-		}
+    .owl-dots{
+      .owl-dot{
+        width: 35px;
+        height: 35px;
+        display: block;
+        border-radius: 100%;
+        background: #f2f2f2;
+        float: left;
+        margin-right: 10px;
+        position: relative;
+
+        .active{
+          background: transparent;
+          border: 1px solid $theme-color;
+
+          span{
+            width: 20px;
+            height: 20px;
+            display: block;
+            left: 7px;
+            top: 7px;
+            position: absolute;
+            margin: auto;
+            background-color: $theme-color !important;
+            border-radius: 100%;
+          }
+        }
+      }
+    }
 	}
 }
 

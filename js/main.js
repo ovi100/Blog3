@@ -32,14 +32,12 @@ $(document).ready(function(){
    // Home Slider
 
     $('#main-slider').owlCarousel({
-    	autoplay:true,
+    	// autoplay:true,
     	autoplayHoverPause:true,
-    	dots:false,
-    	items:2,
-	    loop:true,
-	    margin:0,
-	    nav:true,
-	    navText:['<i class="icofont">rounded_left</i>','<i class="icofont">rounded_right</i>'],
+    	dots:true,
+    	items:1,
+    	loop:true,
+	    nav:false,
 	    responsive:{
 	        0:{
 	            items:1
@@ -48,10 +46,11 @@ $(document).ready(function(){
 	            items:1
 	        },
 	        768:{
-	            items:2
+	            items:1
 	        }
 	    },
-	    slideBy:2
+	    slideBy:1,
+	    smartSpeed:1800
 	})
 
 
@@ -77,6 +76,3 @@ $(function(){
 	});
 
 });
-
-
-  
