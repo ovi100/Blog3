@@ -222,6 +222,38 @@ a{
     				}
 
     				.active{color:$gcolor;}
+
+            #search{
+              .modal-content{
+                height: 155px;
+                border: 0;
+                @include border-radius(0);
+                @include opacity(0.9);
+
+                .modal-body{
+                  .input-group{
+                    .form-control{
+                      border: 0;
+                        border-bottom: 1.5px solid $bcolor;
+                        @include border-radius(0);
+
+                        @include placeholder{
+                          font-size:12px;
+                        }
+
+                        &:focus{box-shadow: none;}
+                    }
+
+                    button{
+                      background: transparent;
+                        border: 0;
+                        border-bottom: 1.5px solid $bcolor;
+                        @include border-radius(0);
+                    }
+                  }
+                }
+              }
+            }
     			}
     		}
     	}
@@ -237,33 +269,75 @@ a{
     position: relative;
 		background:#f6f7fb;
 
+    .slider-text{
+      .date{
+        font-size: 14px;
+        font-weight: 400;
+
+        a{
+          color: $theme-color;
+          letter-spacing: 0.5px;
+
+          &:hover{
+            color: #333;
+            @include transition(all,0.6s,ease);
+          }
+        }
+      }
+
+      h5{
+        a{
+          color: #333;
+
+          &:hover{color: #333;}
+        }
+      }
+
+      .description{
+        font-size: 15px;
+        letter-spacing: 0.5px;
+        line-height: 30px;
+      }
+    }
+
     .owl-dots{
-      .owl-dot{
+      width: 10%;
+      display: block;
+      position: absolute;
+      bottom: 200px;
+      right: 0;
+
+      .owl-dot {
         width: 35px;
         height: 35px;
-        display: block;
-        border-radius: 100%;
         background: #f2f2f2;
+        border-radius: 100%;
+        display: block;
         float: left;
         margin-right: 10px;
         position: relative;
 
-        .active{
-          background: transparent;
-          border: 1px solid $theme-color;
-
-          span{
-            width: 20px;
-            height: 20px;
-            display: block;
-            left: 7px;
-            top: 7px;
-            position: absolute;
-            margin: auto;
-            background-color: $theme-color !important;
-            border-radius: 100%;
-          }
+        span{
+          @extend .owl-dot;
+          margin: 0;
         }
+      }
+    }
+
+    .owl-dots .owl-dot.active{
+      background-color: transparent;
+      border: 1px solid $theme-color;
+
+      span {
+        width: 20px;
+        height: 20px;
+        display: block;
+        left: 7px;
+        top: 7px;
+        position: absolute;
+        margin: auto;
+        background-color: #f88fb5;
+        border-radius: 100%;
       }
     }
 	}

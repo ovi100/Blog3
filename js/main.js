@@ -1,6 +1,6 @@
 /*------------------------------------
  *Author:MD ABU SAYED
- *Template:Blog Theme 2
+ *Template:Blog Theme 3
  *Version:1.0
  *-------------------------------------
  */
@@ -8,15 +8,15 @@
 
 $(document).ready(function(){
 
-	$(window).scroll(function(){
-	    if ($(this).scrollTop()>150){
-	      // $('.menu').addClass('fixed-menu');
+	// $(window).scroll(function(){
+	//     if ($(this).scrollTop()>150){
+	//       $('.menu').addClass('fixed-menu');
 	      
-	    } 
-	    else {
-	      // $('.menu').removeClass('fixed-menu');
-	    }
-  	});
+	//     } 
+	//     else {
+	//       $('.menu').removeClass('fixed-menu');
+	//     }
+ //  	});
 
   	// if ($(window).width()<768){
    //    $('.col-logo').addClass('order-12');
@@ -29,7 +29,7 @@ $(document).ready(function(){
    //  }
 
 
-   // Home Slider
+   // Start Home Slider Js
 
     $('#main-slider').owlCarousel({
     	// autoplay:true,
@@ -53,26 +53,11 @@ $(document).ready(function(){
 	    smartSpeed:1800
 	})
 
+    // End Home Slider Js
+
+    // Search Click Event
+
+    // Search Click Event
 
 });
 
-
-// Header Sidebar
-
-$(function(){
-
-	$(".header-left-icon .header-sidebar .sidebar-body").hide();
-
-	$(document).on('click', '.header-left-icon .header-sidebar .btn-sidebar', function() {
-		$(".header-left-icon .header-sidebar .sidebar-body").fadeIn();
-		$(".header-left-icon .header-sidebar").addClass('active');
-		$(".header-left-icon .header-sidebar .btn-sidebar").addClass('active');
-	});
-
-	$(document).on('click', '.header-left-icon .header-sidebar .sidebar-body .close', function() {
-		$(".header-left-icon .header-sidebar .sidebar-body").fadeOut();
-		$(".header-left-icon .header-sidebar").removeClass('active');
-		$(".header-left-icon .header-sidebar .btn-sidebar").removeClass('active');
-	});
-
-});
