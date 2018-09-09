@@ -348,86 +348,46 @@ a{
 /* CSS For Blog Post Section */
 
 .blog-wrapper{
-	width: 80%;
-    margin: 0 auto;
+	width: 85%;
+  margin: 0 auto;
 
     .main-content{
-    	.post{
-    		position: relative;
-    		background:$wcolor;
-    		@include box-shadow(0 0 2px #ddd);
+    	.post-category{
+        .text{
+          .category-date{
+            font-size: 13px;
+            a{
+              color:$theme-color;
 
-    		.post-photo{
-    			height: 300px;
-    			overflow: hidden;
-			    position: relative;
-
-    			img{
-    				max-width: none;
-				    width: calc(100% + 50px);
-				    @include opacity(1);
-				    @include transition(all,0.5s,ease);
-    			}
-    		}
-
-    		.post-text{
-			    text-align: center;
-
-			    .post-title{
-			    	h2 {font-weight: 600;}
-			    }
-
-			    .post-category{
-			    	label{
-			    		padding: 0 5px;
-
-			    		a{
-			    			color: $wcolor;
-    						font-size: 12px;
-			    		}
-			    	}
-			    }
-
-			    .post-info{
-		    	    color: #757575;
-    				font-size: 12px;
-
-    				a {color: #757575;}
-			    }
-
-			    .post-description {
-				    text-align: left;
-				}
-
-				.post-footer{
-					a {
-						@include border-radius(3px);
-						padding: 8px;
-						text-transform: uppercase;
-					}
-
-					.post-button{
-						a {font-size: 12px;}
-					}
-
-					.post-share{
-						ul{
-							li {display: inline-block;}
-						}
-					}
-				}
-    		}
-
-    		&:hover{
-    			.post-photo{
-    				img {
-    					@include opacity(.7);
-						@include transition(all,0.5s,ease);
-						transform: translate3d(-40px,0,0);
-    				}
-    			}
-    		}
-    	}
+              &:hover{
+                color:$bcolor;
+                @include transition(all,.5s,ease);
+              }
+            }
+          }
+          .title{
+            h4{
+              a{
+                font-size: 19px;
+                &:hover{
+                  color:$theme-color;
+                  @include transition(all,.5s,ease);
+                }
+              }
+            }
+          }
+          .social-link{
+            a{
+              font-size: 12px;
+              margin-right: 5px;
+              &:hover{
+                color:$theme-color;
+                @include transition(all,.5s,ease);
+              }
+            }
+          }
+        }
+      }
     }
 
     .side-content{
