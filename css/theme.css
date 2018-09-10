@@ -46,26 +46,26 @@ a {
 .btn-fill {
   background: #f88fb5;
   border: 2px solid #f88fb5;
-  color: #fff;
-  -webkit-transition: all 0.4s ease-out;
-  -moz-transition: all 0.4s ease-out;
-  -ms-transition: all 0.4s ease-out;
-  -o-transition: all 0.4s ease-out;
-  transition: all 0.4s ease-out; }
+  color: #fff; }
   .btn-fill:hover {
     background: #000;
     border: 2px solid #000;
-    color: #fff; }
+    color: #fff;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in; }
 
 .btn-outline {
   background: transparent;
   border: 1px solid #b5b5b5;
   color: #757575;
-  -webkit-transition: all 0.4s ease-out;
-  -moz-transition: all 0.4s ease-out;
-  -ms-transition: all 0.4s ease-out;
-  -o-transition: all 0.4s ease-out;
-  transition: all 0.4s ease-out; }
+  -webkit-transition: all 0.4s ease-in;
+  -moz-transition: all 0.4s ease-in;
+  -ms-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in; }
   .btn-outline:hover {
     background: #757575;
     border: 1px solid #b5b5b5;
@@ -231,63 +231,29 @@ a {
       -ms-transition: all 0.5s ease;
       -o-transition: all 0.5s ease;
       transition: all 0.5s ease; }
-  .blog-wrapper .side-content {
-    position: sticky;
-    top: 0; }
-    .blog-wrapper .side-content .latest-post {
-      background: #fff;
-      box-shadow: 0 0 2px #ddd; }
-      .blog-wrapper .side-content .latest-post .lpost-item {
-        border-bottom: 1px solid #ddd; }
-        .blog-wrapper .side-content .latest-post .lpost-item .lpost-photo {
-          width: 100%; }
-        .blog-wrapper .side-content .latest-post .lpost-item .lpost-text h6 a:hover {
-          color: #000; }
-        .blog-wrapper .side-content .latest-post .lpost-item .lpost-text time {
-          color: #757575;
-          font-size: 10px;
-          text-transform: uppercase; }
-    .blog-wrapper .side-content .tag {
-      background: #fff;
-      box-shadow: 0 0 2px #ddd; }
-      .blog-wrapper .side-content .tag .tag-link a {
-        display: inline-block;
-        margin-top: 5px;
-        padding: 3px 10px;
-        text-transform: capitalize; }
-    .blog-wrapper .side-content .instagram {
-      background: #fff;
-      box-shadow: 0 0 2px #ddd; }
-      .blog-wrapper .side-content .instagram .instagram-content {
-        width: 95%;
-        padding-left: 6px; }
-        .blog-wrapper .side-content .instagram .instagram-content .row {
-          margin-bottom: 5px; }
-          .blog-wrapper .side-content .instagram .instagram-content .row .col-4 {
-            padding-right: 0;
-            padding-left: 10px; }
-    .blog-wrapper .side-content .category {
-      background: #fff;
-      box-shadow: 0 0 2px #ddd; }
-      .blog-wrapper .side-content .category .category-list ul li {
-        border-bottom: 1px solid #ddd; }
-        .blog-wrapper .side-content .category .category-list ul li a {
-          color: #000;
-          display: block;
-          font-size: 13px;
-          margin-left: 15px;
-          padding: 7px 0;
-          text-transform: uppercase; }
-          .blog-wrapper .side-content .category .category-list ul li a span {
-            color: #757575;
-            margin-left: 15px; }
-          .blog-wrapper .side-content .category .category-list ul li a:before {
-            content: '';
-            width: 5px;
-            height: 5px;
-            background: #757575;
-            display: inline-block;
-            margin: 0 10px 1px -14px; }
+  .blog-wrapper .side-content .header .hbar {
+    background: #f88fb5;
+    width: 15%;
+    height: 1px; }
+  .blog-wrapper .side-content .profile {
+    background: #f6f7fb; }
+  .blog-wrapper .side-content .recent-post .post-list ul li {
+    border-bottom: 1px solid #ddd; }
+    .blog-wrapper .side-content .recent-post .post-list ul li .photo {
+      width: 35%; }
+    .blog-wrapper .side-content .recent-post .post-list ul li .text {
+      margin-top: -5px; }
+      .blog-wrapper .side-content .recent-post .post-list ul li .text a:hover {
+        color: #f88fb5;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease; }
+      .blog-wrapper .side-content .recent-post .post-list ul li .text time {
+        font-size: 13px; }
+  .blog-wrapper .side-content .instagram .col {
+    padding: 0; }
 
 .footer {
   height: 60px;
