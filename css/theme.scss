@@ -434,9 +434,46 @@ a{
 // ************************************
 
 
-// CSS For Address Section
+// CSS For Newsletter Section
 
+.newsletter{
+  height: 250px;
+  background-image: url(../images/newsletter-bg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .news-gradient{
+    height: 250px;
+    padding-top: 95px;
+    @include linear-gradient(rgba(248, 143, 181, 0.95),100%,rgba(248, 143, 181, 0.95));
 
+    .news-form{
+      width: 45%;
+      margin: 0 auto;
+
+      .form-control{
+        height: 60px;
+        border-radius: 0;
+      }
+
+      button{
+        background: $bcolor;
+        border-radius: 0;
+        color: $wcolor;
+        padding: 0 40px;
+
+        &:hover{
+          background: $wcolor;
+          border-left: 1px solid $theme-color;
+          color: $theme-color;
+          @include transition(all,.4s,ease);
+        }
+      }
+    }
+  }
+  
+}
 
 // ************************************
 

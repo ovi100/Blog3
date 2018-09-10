@@ -255,6 +255,53 @@ a {
   .blog-wrapper .side-content .instagram .col {
     padding: 0; }
 
+.newsletter {
+  height: 250px;
+  background-image: url(../images/newsletter-bg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .newsletter .news-gradient {
+    height: 250px;
+    padding-top: 95px;
+    /* fallback/image non-cover color */
+    background: rgba(248, 143, 181, 0.95);
+    /* Firefox 3.6+ */
+    background: -moz-linear-gradient(left, rgba(248, 143, 181, 0.95) 100%, rgba(248, 143, 181, 0.95));
+    /* Safari 4+, Chrome 1+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(100%, rgba(248, 143, 181, 0.95)), color-stop(, rgba(248, 143, 181, 0.95)));
+    /* Safari 5.1+, Chrome 10+ */
+    background: -webkit-linear-gradient(left, rgba(248, 143, 181, 0.95) 100%, rgba(248, 143, 181, 0.95));
+    /* Opera 11.10+ */
+    background: -o-linear-gradient(left, rgba(248, 143, 181, 0.95) 100%, rgba(248, 143, 181, 0.95));
+    /* IE10+ */
+    background: -ms-linear-gradient(left, rgba(248, 143, 181, 0.95) 100%, rgba(248, 143, 181, 0.95));
+    /* Standard */
+    background: linear-gradient(to right, rgba(248, 143, 181, 0.95) 100%, rgba(248, 143, 181, 0.95));
+    /* IE6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$sc', endColorstr='$ec',GradientType=1 ); }
+    .newsletter .news-gradient .news-form {
+      width: 45%;
+      margin: 0 auto; }
+      .newsletter .news-gradient .news-form .form-control {
+        height: 60px;
+        border-radius: 0; }
+      .newsletter .news-gradient .news-form button {
+        background: #000;
+        border-radius: 0;
+        color: #fff;
+        padding: 0 40px; }
+        .newsletter .news-gradient .news-form button:hover {
+          background: #fff;
+          border-left: 1px solid #f88fb5;
+          color: #f88fb5;
+          -webkit-transition: all 0.4s ease;
+          -moz-transition: all 0.4s ease;
+          -ms-transition: all 0.4s ease;
+          -o-transition: all 0.4s ease;
+          transition: all 0.4s ease; }
+
 .footer {
   height: 60px;
   color: #000;
