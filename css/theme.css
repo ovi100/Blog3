@@ -409,4 +409,26 @@ a {
     .footer p a {
       color: #f88fb5; }
 
+.about {
+  width: 70%;
+  margin: 0 auto; }
+
+.tag .tag-content {
+  width: 85%;
+  margin: 0 auto; }
+  .tag .tag-content .tag-box .tag-title a {
+    font-size: 20px;
+    font-weight: 600; }
+    .tag .tag-content .tag-box .tag-title a:hover {
+      color: #f88fb5;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease; }
+    .tag .tag-content .tag-box .tag-title a span {
+      color: #9e9e9e; }
+      .tag .tag-content .tag-box .tag-title a span:hover {
+        color: #9e9e9e; }
+
 /*# sourceMappingURL=theme.css.map */

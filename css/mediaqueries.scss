@@ -54,15 +54,65 @@ $phone-portrait: '(min-width: 320px) and (max-width: 479px)';
 
 
 @include respond-to($phone-portrait){
+  .header{
+    .navbar{
+      .navbar-toggler{
+        height: 40px;
+        border: 1px solid #ddd;
 
+        &:focus{outline: 0;}
+        span{
+          width: 30px;
+          height: 2px;
+          background: #947878;
+          display: block;
+          margin-top: 7px;
+        }
+      }
+      .navbar-collapse{
+        background: #ddd;
+        text-align: center;
+        z-index: 10;
+      }
+    }
+  }
+
+  .home-slider{
+    #main-slider{
+      .slider-text{
+        .description{text-align: justify;}
+      }
+      .owl-dots{display: none;}
+    }
+  }
+
+  .blog-wrapper{
+    .side-content{
+      .recent-post{
+        .post-list{
+          ul{
+            li{
+              .text{
+                time {display: block;}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .newsletter{
+    .news-gradient{
+      .news-form{width: 95%;}
+    }
+  }
 }
 
 
 @include respond-to($large-desktop){
 
-	.blog-wrapper{
-		width: 60%;
-	}
+	
 }
 
 
