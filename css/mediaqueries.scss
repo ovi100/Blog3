@@ -1,4 +1,4 @@
-
+$theme-color:#f88fb5;
 $bcolor:#000;
 $wcolor:#fff;
 $gcolor:#9e9e9e;
@@ -42,7 +42,7 @@ $phone-landscape: '(min-width: 481px) and (max-width: 767px)';
   ##Screen = B/w 320px to 479px
 */
 
-$phone-portrait: '(min-width: 320px) and (max-width: 479px)';
+$phone-portrait: '(min-width: 320px) and (max-width: 480px)';
 
 
 @mixin respond-to($device){
@@ -54,25 +54,35 @@ $phone-portrait: '(min-width: 320px) and (max-width: 479px)';
 
 
 @include respond-to($phone-portrait){
-  .header{
-    .navbar{
-      .navbar-toggler{
-        height: 40px;
-        border: 1px solid #ddd;
 
-        &:focus{outline: 0;}
-        span{
-          width: 30px;
-          height: 2px;
-          background: #947878;
-          display: block;
-          margin-top: 7px;
+  .section-content{width: 92%;}
+
+  .header{
+    .menu{
+      .navbar{
+        .navbar-toggler{
+          height: 40px;
+          border: 1px solid #ddd;
+
+          &:focus{outline: 0;}
+          span{
+            width: 30px;
+            height: 2px;
+            background: #947878;
+            display: block;
+            margin-top: 7px;
+          }
         }
-      }
-      .navbar-collapse{
-        background: #ddd;
-        text-align: center;
-        z-index: 10;
+        .navbar-collapse{
+          background: #ddd;
+          text-align: center;
+          z-index: 10;
+        }
+        .navbar-nav{
+          .nav-item{
+            .nav-link{color: $theme-color;}
+          }
+        }
       }
     }
   }
@@ -80,7 +90,10 @@ $phone-portrait: '(min-width: 320px) and (max-width: 479px)';
   .home-slider{
     #main-slider{
       .slider-text{
-        .description{text-align: justify;}
+        .description{
+          line-height: 22px;
+          text-align: justify;
+        }
       }
       .owl-dots{display: none;}
     }
@@ -105,6 +118,69 @@ $phone-portrait: '(min-width: 320px) and (max-width: 479px)';
   .newsletter{
     .news-gradient{
       .news-form{width: 95%;}
+    }
+  }
+  
+  .instagram{
+    .instagram-content{padding-left: 0 !important;}
+  }
+
+  .blog-wrapper{width: 92%;}
+
+}
+
+@include respond-to($phone-landscape){
+
+  .header{
+    .logo{float: left;}
+    .menu{
+      .navbar{
+        .navbar-toggler{
+          position: absolute;
+          top: 20px;
+          right: 0;
+          height: 40px;
+          border: 1px solid #ddd;
+
+          &:focus{outline: 0;}
+          span{
+            width: 30px;
+            height: 2px;
+            background: #947878;
+            display: block;
+            margin-top: 7px;
+          }
+        }
+        .navbar-collapse{
+          background: #ddd;
+          margin-top: 60px;
+          text-align: center;
+          z-index: 10;
+        }
+        .navbar-nav{
+          .nav-item{
+            .nav-link{color: $theme-color;}
+          }
+        }
+      }
+    }
+  }
+
+  .home-slider{
+    #main-slider{
+      .owl-dots {display: none;}
+    }
+  }
+}
+
+@include respond-to($tablet-portrait){
+
+  .home-slider{
+    #main-slider{
+      .owl-dots {
+        width: 15%;
+        bottom: 262px;
+      }
     }
   }
 }

@@ -22,24 +22,30 @@
   ##Device = Most of the Smartphones Mobiles (Portrait)
   ##Screen = B/w 320px to 479px
 */
-@media only screen and (min-width: 320px) and (max-width: 479px) {
-  .header .navbar .navbar-toggler {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .section-content {
+    width: 92%; }
+
+  .header .menu .navbar .navbar-toggler {
     height: 40px;
     border: 1px solid #ddd; }
-    .header .navbar .navbar-toggler:focus {
+    .header .menu .navbar .navbar-toggler:focus {
       outline: 0; }
-    .header .navbar .navbar-toggler span {
+    .header .menu .navbar .navbar-toggler span {
       width: 30px;
       height: 2px;
       background: #947878;
       display: block;
       margin-top: 7px; }
-  .header .navbar .navbar-collapse {
+  .header .menu .navbar .navbar-collapse {
     background: #ddd;
     text-align: center;
     z-index: 10; }
+  .header .menu .navbar .navbar-nav .nav-item .nav-link {
+    color: #f88fb5; }
 
   .home-slider #main-slider .slider-text .description {
+    line-height: 22px;
     text-align: justify; }
   .home-slider #main-slider .owl-dots {
     display: none; }
@@ -48,6 +54,43 @@
     display: block; }
 
   .newsletter .news-gradient .news-form {
-    width: 95%; } }
+    width: 95%; }
+
+  .instagram .instagram-content {
+    padding-left: 0 !important; }
+
+  .blog-wrapper {
+    width: 92%; } }
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .header .logo {
+    float: left; }
+  .header .menu .navbar .navbar-toggler {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    height: 40px;
+    border: 1px solid #ddd; }
+    .header .menu .navbar .navbar-toggler:focus {
+      outline: 0; }
+    .header .menu .navbar .navbar-toggler span {
+      width: 30px;
+      height: 2px;
+      background: #947878;
+      display: block;
+      margin-top: 7px; }
+  .header .menu .navbar .navbar-collapse {
+    background: #ddd;
+    margin-top: 60px;
+    text-align: center;
+    z-index: 10; }
+  .header .menu .navbar .navbar-nav .nav-item .nav-link {
+    color: #f88fb5; }
+
+  .home-slider #main-slider .owl-dots {
+    display: none; } }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .home-slider #main-slider .owl-dots {
+    width: 15%;
+    bottom: 262px; } }
 
 /*# sourceMappingURL=mediaqueries.css.map */
