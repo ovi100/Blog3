@@ -55,7 +55,11 @@ $phone-portrait: '(min-width: 320px) and (max-width: 480px)';
 
 @include respond-to($phone-portrait){
 
+  // Common Style
+
   .section-content{width: 92%;}
+
+  // Index Page
 
   .header{
     .menu{
@@ -100,6 +104,7 @@ $phone-portrait: '(min-width: 320px) and (max-width: 480px)';
   }
 
   .blog-wrapper{
+    width: 92%;
     .side-content{
       .recent-post{
         .post-list{
@@ -125,11 +130,15 @@ $phone-portrait: '(min-width: 320px) and (max-width: 480px)';
     .instagram-content{padding-left: 0 !important;}
   }
 
-  .blog-wrapper{width: 92%;}
+  // About Page
+
+  .about{width: 90%;}
 
 }
 
 @include respond-to($phone-landscape){
+  
+  // Index Page
 
   .header{
     .logo{float: left;}
@@ -171,9 +180,24 @@ $phone-portrait: '(min-width: 320px) and (max-width: 480px)';
       .owl-dots {display: none;}
     }
   }
+
+  .blog-wrapper{width: 90%;}
+
+  .newsletter{
+    .news-gradient{
+      .news-form{width: 80%;}
+    }
+  }
+
+  // About Page
+
+  .about{width: 90%;}
+
 }
 
 @include respond-to($tablet-portrait){
+
+  // Index Page
 
   .home-slider{
     #main-slider{
@@ -183,12 +207,32 @@ $phone-portrait: '(min-width: 320px) and (max-width: 480px)';
       }
     }
   }
+
+  .newsletter{
+    .news-gradient{
+      .news-form{width: 80%;}
+    }
+  }
+
+  // About Page
+
+  .about{width: 90%;}
+
 }
 
 
-@include respond-to($large-desktop){
+@include respond-to($normal-desktop){
 
-	
+  .newsletter{
+    .news-gradient{
+      .news-form{width: 80%;}
+    }
+  }
+
+	// About Page
+
+  .about{width: 85%;}
+
 }
 
 
